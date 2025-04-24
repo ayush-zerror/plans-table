@@ -9,7 +9,7 @@ const TableContainer = () => {
     return (
         <div id='table-container'>
             <div className="full-list-btn" onClick={()=>setIsOpen(!isOpen)}>
-                <MdAdd /><span className={`${isOpen ? "rotate":""}`}> Full list of features <IoIosArrowDown/></span>
+                <MdAdd /><span className={`${isOpen ? "rotate":""}`}> {isOpen ? "Close full list of features":"Full list of features"} <IoIosArrowDown/></span>
             </div>
             {
                 isOpen && <div id='table-wrapper' className='bg-gradient-to-b from-[#F4FAFE] to-[#F9FEFF00]'>

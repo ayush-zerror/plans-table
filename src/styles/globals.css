@@ -630,6 +630,9 @@ main {
   .full-list-btn span.rotate svg{
     rotate:180deg;
   }
+  #table-wrapper {
+    background: white !important;
+  }
 
   #homer-section3{
     padding-top: 3rem;
@@ -684,12 +687,17 @@ main {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     margin-bottom: 0;
+    padding:1.1rem 1rem;
   }
   .full-list-btn:hover {
     box-shadow: none;
   }
   #table-wrapper {
     padding: 1rem;
+  }
+
+  .trybtn {
+    height: 50px;
   }
 
   .table-large {
