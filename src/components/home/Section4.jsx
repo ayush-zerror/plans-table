@@ -10,6 +10,10 @@ const Section4 = () => {
             <input type="text" placeholder='Enter your email address' />
             <button>Start free trail</button>
         </div>
+        <div className='mailbox-mobile'>
+        <input className='input-mobile' type="text" placeholder='Enter your email address' />
+        <button className='btn-mobile'>Start free trail</button>
+      </div>
         <h6>Try Shopify free, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</h6>
     </div>
   )

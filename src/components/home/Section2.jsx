@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoCheckmarkSharp } from "react-icons/io5";
+import TableContainer from './TableContainer';
 const Section2 = () => {
+    const [plan, setPlan] = useState(0)
+    const plans = ["Basic","Grow","Advanced","Plus"]
     return (
         <div id='home-section2'>
             <div className='type-btn'>
                 <button>Pay Monthly</button>
                 <button>Pay Yearly (save 25%)*</button>
+            </div>
+            <div id='types-of-plan'>
+                {plans.map((p,i)=>(
+                     <span
+                     key={i}
+                     className={`${plan === i ? 'selected' : ''} ${plan === plans.length - 1 && plan === i ? 'selected-blue' : ''}`}
+                     onClick={() => setPlan(i)}
+                   >
+                     {p}
+                   </span>
+                ))}
             </div>
             <div className="plans-container">
                 <div className="plan">
@@ -143,6 +157,7 @@ const Section2 = () => {
                 </div>
             </div>
             <p className='plans-container-desc'>*Yearly discount available on select plans</p>
+            <TableContainer/>
         </div>
     )
 }
