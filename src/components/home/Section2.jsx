@@ -24,7 +24,7 @@ const Section2 = () => {
             <div className="plans-container">
                 <div className="plan">
                     <div>
-                        <div className="plan-title">
+                        <div className={`plan-title ${plan === 3 ? "blue-bg":''}`}>
                             <p>₹20/month for first 3 months</p>
                         </div>
                         <div className="plan-heading">
@@ -32,7 +32,7 @@ const Section2 = () => {
                                 <span className='plan-h'>Basic</span>
                                 <p>For solo entrepreneurs</p>
                             </div>
-                            <span id='popular'>most popular</span>
+                            <span id='popular' className={`${plan === 3 ? "blue-bg":''}`}>most popular</span>
                         </div>
                         <div className="plan-price">
                             <div>
