@@ -622,6 +622,7 @@ main {
   }
   .full-list-btn span svg{
     transition: all ease .2s;
+    display: block;
   }
   .full-list-btn >svg{
     display: none;
