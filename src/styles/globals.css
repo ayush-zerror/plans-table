@@ -241,10 +241,11 @@ main {
   border: 1px solid #e5e7eb;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
-.plan:nth-child(3) .plan-title {
-  background-color: #255dee;
+.plan:nth-child(3) .plan-title , .blue-title-plan {
+  background-color: #255dee !important;
   color: white;
 }
+
 .plan-title {
   padding: 0.5rem 1rem;
   background-color: #45f298;

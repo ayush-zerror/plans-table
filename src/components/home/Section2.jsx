@@ -67,7 +67,7 @@ const Section2 = () => {
     const renderPlanCard = (planData, i) => (
         <div className="plan" key={i}>
             <div>
-                <div className="plan-title">
+                <div className={`plan-title ${i === 2 ? 'blue-title-plan' : ''}`}>
                     <p>{planData.offer}</p>
                 </div>
                 <div className="plan-heading">
