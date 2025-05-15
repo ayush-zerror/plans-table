@@ -201,7 +201,7 @@ main {
   border-bottom: 1px solid #71717ab4;
 }
 #types-of-plan span {
-  width: calc(100% / 4);
+  width: calc(100% / 3);
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-family: font1;
@@ -235,13 +235,13 @@ main {
   padding: 2rem 5.625rem;
 }
 .plan {
-  width: 24.2%;
+  width: 32%;
   border-radius: 1rem;
   overflow: hidden;
   border: 1px solid #e5e7eb;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
-.plan:nth-child(4) .plan-title {
+.plan:nth-child(3) .plan-title {
   background-color: #255dee;
   color: white;
 }

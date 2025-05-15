@@ -1,4 +1,4 @@
-import SmoothScroller from "@/components/smoothScroll/SmoothScroll";
+import SmoothScroller from "@/components/smoothScroll/SmoothScroller";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {

@@ -4,7 +4,7 @@ import Table from './Table';
 import TableMobile from './TableMobile';
 import { IoIosArrowDown } from "react-icons/io";
 
-const TableContainer = () => {
+const TableContainer = ({plan,setPlan}) => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <div id='table-container'>
@@ -15,7 +15,7 @@ const TableContainer = () => {
                 isOpen && <div id='table-wrapper' className='bg-gradient-to-b from-[#F4FAFE] to-[#F9FEFF00]'>
                     <h2 id='title-table'>Compare all plan features</h2>
                     <Table />
-                    <TableMobile/>
+                    <TableMobile plan={plan} setPlan={setPlan}/>
                 </div>
             }
         </div>

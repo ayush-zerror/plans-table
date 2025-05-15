@@ -1,243 +1,107 @@
-import React from 'react'
-import { IoCloseSharp } from "react-icons/io5";
-import { IoCheckmarkSharp } from "react-icons/io5";
+import React from "react";
 
+const TableMobile = ({ plan }) => {
+  const data = [
+    {
+      feature: "Monthly Cost",
+      values: ["5,000 INR", "7,000 INR", "20,000 INR"],
+    },
+    {
+      feature: "Pay Annually (Save up to 25%)",
+      values: ["54,000 INR (save 10%)", "71,400 INR (save 15%)", "1,80,000 INR (save 25%)"],
+    },
+    {
+      feature: "Online store",
+      values: ["Full-featured", "Full-featured", "Full-featured"],
+    },
+    {
+      feature: "SKUs",
+      values: ["Upto 250", "Upto 1000", "Upto 5000"],
+    },
+    {
+      feature: {
+        title: "Emails per month",
+        description: "(Additional 0.50 INR per email after that)",
+      },
+      values: ["200", "500", "3000"],
+    },
+    {
+      feature: {
+        title: "SMS per month",
+        description: "(Additional 0.50 INR per SMS after that)",
+      },
+      values: ["200", "500", "3000"],
+    },
+    {
+      feature: {
+        title: "WhatsApp messages per month",
+        description: "(Additional 0.50 INR per WhatsApp messages after that)",
+      },
+      values: ["200", "500", "3000"],
+    },
+    {
+      feature: "Analytics",
+      values: ["Basic", "Standard", "Advanced"],
+    },
+    {
+      feature: "Additional staff accounts",
+      values: ["-", "Upto 3", "Upto 20"],
+    },
+    {
+      feature: "International markets",
+      values: ["-", "Upto 3", "Upto 10"],
+    },
+    {
+      feature: "Transaction fees",
+      values: ["4%", "3%", "2%"],
+    },
+    {
+      feature: "Sales channels",
+      values: ["-", "-", "Available"],
+    },
+    {
+      feature: "Monthly development hours",
+      values: ["-", "Upto 2", "Upto 5"],
+    },
+    {
+      feature: "Priority support",
+      values: ["Within 12 hours", "Within 3 hours", "Within 1 hour"],
+    },
+    {
+      feature: "Unlimited web hosting",
+      values: ["Included", "Included", "Included"],
+    },
+    {
+      feature: "SSL certificate",
+      values: ["Included", "Included", "Included"],
+    }
+  ];
 
-const TableMobile = () => {
-    return (
-        <table id='table' className='table-small'>
-            <tbody>
-                <tr className='sub-header'>
-                    <td>Pricing</td>
-                    <td></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td className='sub-text2'>Pay monthly</td>
-                    <td className='para-text black text-center'>Starting at <br />₹1,75,000 INR/mo <br />on a 3-year term</td>
-                </tr>
-                <tr className='table-hover'>
-                    <td className='sub-text2'>Pay yearly (Save up to 25%)*</td>
-                    <td className='icon text-center'><IoCloseSharp /></td>
-                </tr>
-                <tr className='sub-header'>
-                    <td>Core features</td>
-                    <td></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Online store</span>
-                            <p className='para-text'>Easily build an online store. Full features include product collections, informational pages, and blogs.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon'><IoCloseSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>World's best-converting checkout</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Unlimited products</span>
-                            <p className='para-text'>Sell as many products and services as you want.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Unlimited products</span>
-                            <p className='para-text'>Sell as many products and services as you want.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon'><IoCloseSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Collaborator accounts</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Templates and themes</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Sales channels</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='sub-header'>
-                    <td>Hosting and administration</td>
-                    <td></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Unlimited web hosting</span>
-                            <p className='para-text'>Get fast load times and exceptional reliability for your store with unlimited bandwidth and storage.</p>
-                        </div>
-                    </td>
-                    <td className='text-center para-text black'>Full-featured</td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Custom domain</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Free SSL certificate</span>
-                            <p className='para-text'>Sell as many products and services as you want.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Unlimited web hosting</span>
-                            <p className='para-text'>Get fast load times and exceptional reliability for your store with unlimited bandwidth and storage.</p>
-                        </div>
-                    </td>
-                    <td className='text-center para-text black'>Full-featured</td>
-                </tr>
-                <tr className='sub-header'>
-                    <td>Marketing</td>
-                    <td></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Unlimited contacts</span>
-                            <p className='para-text'>Get fast load times and exceptional reliability for your store with unlimited bandwidth and storage.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Customer segmentation</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Shopify Email</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Shopify Forms</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Shopify Inbox</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Marketing automation</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Discount codes</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='sub-header'>
-                    <td>Shopify Marketplace Connect</td>
-                    <td></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Connect and list products</span>
-                            <p className='para-text'>Get fast load times and exceptional reliability for your store with unlimited bandwidth and storage.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                   
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Import marketplace orders</span>
-                            <p className='para-text'>Equip your store with a world-class checkout that lets customers complete purchases with just one click.</p>
-                        </div>
-                    </td>
-                    <td className='text-center icon green-tick'><IoCheckmarkSharp /></td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>More than 50 Shopify-synced orders</span>
-                            <p className='para-text'>Sell as many products and services as you want.</p>
-                        </div>
-                    </td>
-                    <td className='text-center para-text black'>1% up to $99 USD/mo</td>
-                </tr>
-                <tr className='table-hover'>
-                    <td>
-                        <div className='item-col'>
-                            <span className='sub-text2'>Unlimited web hosting</span>
-                            <p className='para-text'>Get fast load times and exceptional reliability for your store with unlimited bandwidth and storage.</p>
-                        </div>
-                    </td>
-                    <td className='text-center para-text black'>Full-featured</td>
-                </tr>
-            </tbody>
-        </table>
-
-    )
-}
+  return (
+    <table id="table" className="table-small">
+      <tbody>
+        {data.map((item, idx) => (
+          <tr key={idx} className="table-hover">
+            <td>
+              <div className="item-col">
+                <span className="sub-text2">
+                  {typeof item.feature === "string"
+                    ? item.feature
+                    : item.feature.title}
+                </span>
+                {typeof item.feature === "object" && (
+                  <p className="para-text">{item.feature.description}</p>
+                )}
+              </div>
+            </td>
+            <td className="para-text black text-center">
+              {item.values[plan]}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
 
 export default TableMobile;
